@@ -1,0 +1,12 @@
+{% extends "article/base.html" %}
+
+{% block content %}
+<p> This is article list </p>
+<ul>
+{% for instance in object_list %}
+  <li> {{ instance.id }} -  {{ instance.tile }} </li>
+{% empty %}
+  <li>  No articles Yet </li>
+{% endfor %}
+</ul>
+{% endblock %}

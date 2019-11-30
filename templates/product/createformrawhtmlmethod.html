@@ -1,0 +1,10 @@
+
+
+{% extends "product\base.html" %}
+
+{% block content_1 %}
+  <form method='POST'> {% csrf_token %}
+  <input type='text' name='title' placeholder="your title" />
+  <input type='submit' value='save' />
+  </form>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+<title>  "Django Template Features" </title>
+</head>
+<body>
+      <h4> {% include "product\navbar.html" %} </h4>
+       <h5>  Current User name is :-  {{ request.user }} </h2> <br> <br>
+      {% block content_main %}
+         Main block from base Template
+      {% endblock %}
+
+      {% block content_1 %}
+         replace me
+      {% endblock content_1 %}
+
+</body>
+</html>

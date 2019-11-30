@@ -1,0 +1,129 @@
+{% extends "bali\base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+
+
+
+
+  <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <img src="{% static 'bali\image\vinayaga.jpg' %}" class="img-circle"
+        width="56" height="52" alt="...">
+     </div>
+
+
+        <ul class="nav navbar-nav">
+
+          <li class="active"><a href="#"> TeakWood </a></li>
+          <li class =""><a href="#"> Antique </a></li>
+          <li class=""><a href="#"> Flower </a></li>
+          <li class=""><a href="#"> Gift </a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-record"></span> Wish-list </a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"> Cart </span>
+              </a></li>
+          <!-- <p  class="navbar-text" style="padding-left:225px; text-shadow:3px 2px red; -->
+          <!-- font-size:32px;font:caption;"> Balicraft </p> -->
+        <!-- </ul>
+      </div> -->
+
+      <!-- <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+
+
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log-In </a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign-Up </a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> 9841031913 </a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-send"></span> rajeshkannan@balicraft.com </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="{% static 'bali\image\vinayaga.jpg' %}" class="img-circle"
+         width="56" height="52" alt="...">
+      </div>
+      <div>
+      
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Shop</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"> Cart </span>
+              </a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log-In </a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign-Up </a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> 9841031913 </a></li>
+          <!-- <li><a href="#"><span class="glyphicon glyphicon-send"></span> rajeshkannan@balicraft.com </a></li> -->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="page-header">
+    <h1>Example page header <small>Subtext for header</small></h1>
+  </div> -->
+   <!-- <nav class="navbar navbar-inverse navbar-right" style="margin-top:6opx;">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Phone</a></li>
+      <li><a href="#">Email</a></li>
+    </ul>
+    <p class="navbar-text">Balicraft</p>
+  </nav> -->
+  <div class="jumbotron text-center" style="height:150px;">
+    <h3> Bali Craft , Today's offers 20% on Teak Wood, 30% on Gifts Item </h3>
+    <p> Make a visit to the store and get lot of surprised gifts </p>
+  </div>
+
+  <div>
+   <h5> {% include "bali\slide.html" %} </h5>
+  </div>
+
+
+
+
+  <div class="card-deck">
+        <div class="card">
+            <img src="{% static 'bali\image\vinayaga.jpg' %}" class="card-img-top" style="height:100px; width:20%;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">TeakWood</h5>
+              <p class="card-text">This is a wider card with supporting text below .</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+
+        <div class="card">
+          <img src="{% static 'bali\image\antique.jpg' %}" class="card-img-top" width="150" height="150" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Antique Gift</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="{% static 'bali\image\flower.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Flower</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <button type="button" class="btn btn-link">View</button>
+          </div>
+        </div>
+  </div>
+{% endblock %}

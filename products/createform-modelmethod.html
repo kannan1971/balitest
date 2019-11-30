@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content_1 %}
+<h2> This is Model Method </h2></br>
+
+  <form method='POST'> {% csrf_token %}
+
+    {{ createform.as_p }}
+    
+  <input type='submit' value='save' />
+  </form>
+
+{% endblock %}

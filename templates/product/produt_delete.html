@@ -1,0 +1,11 @@
+{% extends "product\base.html" %}
+
+{% block content_1 %}
+<h2> This is Delete Method </h2></br>
+
+  <form action='.' method='POST'> {% csrf_token %}
+    <h1> Do you want to delet the product "{{ obj.title}}" </h1>
+    <p> <input type='submit' value='save' /> <a href='../../'>cancel</a></p>
+  </form>
+
+{% endblock %}

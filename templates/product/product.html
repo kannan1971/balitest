@@ -1,0 +1,22 @@
+{% extends "product\base1.html" %}
+
+{% block content_1 %}
+  <h4>  About Product category:- {{ my_product_name }} </h4>
+
+   <p>  All fruits price per kg:- {{ my_product_price}} </p> <br>
+
+
+   <ul class="list-group">
+     {% for i in my_product_list %}
+      <li class="list-group-item ">{{ forloop.counter}} - {{ i }}</li>
+     {% endfor %}
+   </ul>
+
+
+   <!-- <ul>
+   {% for i in my_product_list %}
+       <li> {{ forloop.counter }} - {{ i }}
+       </li>
+   {% endfor %}
+ </ul> -->
+{% endblock %}
